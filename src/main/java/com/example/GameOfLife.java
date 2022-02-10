@@ -3,11 +3,11 @@ package com.example;
 public class GameOfLife {
 
     public int[][] createInitialGeneration() {
-        return new int[][] { //
-                { 1, 0, 0, 1, 0 },
-                { 0, 0, 0, 1, 0 },
-                { 0, 0, 0, 1, 0 },
-                { 0, 0, 0, 0, 0 } };
+        return new int[][]{ //
+                {1, 0, 0, 1, 0},
+                {0, 0, 0, 1, 0},
+                {0, 0, 0, 1, 0},
+                {0, 0, 0, 0, 0}};
     }
 
     public int[][] calculateNextGeneration(int[][] generation) {
