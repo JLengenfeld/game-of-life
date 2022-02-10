@@ -1,9 +1,9 @@
 package com.example.printer;
 
-public class GenerationPrinter {
+public class GenerationPrinter implements Printer {
 
+    @Override
     public void printGeneration(int[][] initialGen) {
-
         for (int[] lines : initialGen) {
             StringBuilder line = new StringBuilder("|");
             for (int cells : lines) {

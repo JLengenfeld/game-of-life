@@ -1,6 +1,7 @@
 package com.example;
 
 import com.example.printer.GenerationPrinter;
+import com.example.printer.Printer;
 
 import static java.util.Arrays.deepEquals;
 
@@ -9,7 +10,7 @@ public class App {
     public static void main(String[] args) throws InterruptedException {
 
         GameOfLife gameOfLife = new GameOfLife();
-        GenerationPrinter printer = new GenerationPrinter();
+        Printer printer = new GenerationPrinter();
 
         int[][] initialGen = gameOfLife.createInitialGeneration();
         printer.printGeneration(initialGen);
