@@ -14,7 +14,7 @@ public class App {
 
         int[][] nextGen = gameOfLife.calculateNextGeneration(initialGen);
 
-        while (deepEquals(nextGen, initialGen)) {
+        while (!deepEquals(nextGen, initialGen)) {
             printer.printGeneration(nextGen);
             nextGen = gameOfLife.calculateNextGeneration(nextGen);
             Thread.sleep(1000L);
