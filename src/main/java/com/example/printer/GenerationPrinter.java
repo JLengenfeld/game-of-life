@@ -1,4 +1,4 @@
-package com.example;
+package com.example.printer;
 
 public class GenerationPrinter {
 

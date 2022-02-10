@@ -1,5 +1,7 @@
 package com.example;
 
+import com.example.printer.GenerationPrinter;
+
 import static java.util.Arrays.deepEquals;
 
 public class App {
