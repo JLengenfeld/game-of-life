@@ -13,10 +13,12 @@ public class App {
         printer.printGeneration(initialGen);
 
         int[][] nextGen = gameOfLife.calculateNextGeneration(initialGen);
+        printer.printGeneration(nextGen);
 
         while (!deepEquals(nextGen, initialGen)) {
+            initialGen = nextGen;
+            nextGen = gameOfLife.calculateNextGeneration(initialGen);
             printer.printGeneration(nextGen);
-            nextGen = gameOfLife.calculateNextGeneration(nextGen);
             Thread.sleep(1000L);
         }
     }
