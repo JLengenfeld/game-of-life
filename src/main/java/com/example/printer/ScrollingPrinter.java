@@ -1,6 +1,6 @@
 package com.example.printer;
 
-public class GenerationPrinter implements Printer {
+public class ScrollingPrinter implements Printer {
 
     @Override
     public void printGeneration(int[][] initialGen) {
