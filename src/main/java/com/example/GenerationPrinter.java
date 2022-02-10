@@ -4,16 +4,10 @@ public class GenerationPrinter {
 
     public void printGeneration(int[][] initialGen) {
 
-        for (int x = 0; x < initialGen.length; x++) {
-            String line = "|";
-            for (int y = 0; y < initialGen[x].length; y++) {
-                String newCell;
-                if (initialGen[x][y] == 1) {
-                    newCell = "*|";
-                } else {
-                    newCell = " |";
-                }
-                line = line + newCell;
+        for (int[] lines : initialGen) {
+            StringBuilder line = new StringBuilder("|");
+            for (int cells : lines) {
+                line.append((cells == 1) ? "*|" : " |");
             }
             System.out.println(line);
         }
