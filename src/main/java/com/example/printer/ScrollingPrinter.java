@@ -5,13 +5,13 @@ public class ScrollingPrinter implements Printer {
     @Override
     public void printGeneration(int[][] initialGen) {
         for (int[] lines : initialGen) {
-            StringBuilder line = new StringBuilder("|");
+            System.out.print("|");
             for (int cells : lines) {
-                line.append((cells == 1) ? "*|" : " |");
+                System.out.print((cells == 1) ? "*|" : " |");
             }
-            System.out.println(line);
+            System.out.println(); // line break
         }
-        System.out.println();
+        System.out.println(); // empty line after whole grid
     }
 
 }
