@@ -13,5 +13,4 @@ public class ScrollingPrinter implements Printer {
         }
         System.out.println(); // empty line after whole grid
     }
-
 }

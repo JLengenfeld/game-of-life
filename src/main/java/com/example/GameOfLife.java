@@ -45,5 +45,4 @@ public class GameOfLife {
         }
         return neighbours;
     }
-
 }
